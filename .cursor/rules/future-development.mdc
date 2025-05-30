@@ -1,0 +1,26 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Future Development Ideas
+
+The project has several planned improvements for version 2.0:
+
+## Additional Features
+- **More Metrics**: Transportation quality, environmental scores, cultural activities
+- **Real-time Dashboard**: Interactive web application with Streamlit/Dash
+- **Machine Learning**: Models to predict city trends
+- **User Customization**: Weight adjustments for different age groups
+- **Geographic Expansion**: Include European and Asian cities
+- **Mobile Application**: Mobile version with React Native
+
+## Portfolio Presentation
+- **GitHub Showcase**: Detailed README.md + project organization
+- **LinkedIn Content**: "City analysis with 5 metrics" series
+- **Medium Article**: Methodology and algorithm explanation
+- **Kaggle Dataset**: Final scores + methodology publication
+- **YouTube Demo**: Live data analysis process
+- **Conference Talk**: Presentation at data science meetups
+
+See the full list of development ideas in [city_livability_project.md](mdc:city_livability_project.md).
