@@ -1,0 +1,42 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Project Structure
+
+The project follows this directory structure:
+
+```
+city_livability_project/
+│
+├── data/
+│   ├── raw/                    # Raw data
+│   ├── processed/              # Processed data
+│   └── final/                  # Final data and visualizations
+│
+├── src/                        # Source code
+│   ├── data_collection.py      # Data collection from APIs
+│   ├── data_processing.py      # Data cleaning and processing
+│   ├── scoring_algorithm.py    # Livability score calculation
+│   ├── visualization.py        # Graphs and visualizations
+│   ├── education_data_collection.py # Education data collection
+│   └── health_data_collection.py    # Health data collection
+│
+├── notebooks/                  # Jupyter notebooks
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_analysis.ipynb
+│   └── 03_final_report.ipynb
+│
+├── config/
+│   └── api_keys.py            # API keys configuration
+│
+├── requirements.txt           # Python packages
+└── README.md                 # Project description
+```
+
+The main workflow follows these steps:
+1. Data collection from multiple APIs
+2. Data processing and cleaning
+3. Score calculation using weighted metrics
+4. Visualization and final analysis
