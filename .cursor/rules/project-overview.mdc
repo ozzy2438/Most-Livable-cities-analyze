@@ -1,0 +1,17 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# City Livability Index Project Overview
+
+This project analyzes the livability of different cities based on five key metrics:
+- 🌬️ Air Quality (OpenWeatherMap API)
+- 💼 Economic Indicators (FRED API)
+- 🚔 Safety (Crime Statistics)
+- 🎓 Education Quality (Urban Institute Education Data API)
+- 🏥 Health Indicators (CDC/HealthData.gov APIs)
+
+The project aims to calculate livability scores for cities like New York, Chicago, Austin, Miami, Denver (USA), and Istanbul (Turkey) for comparison.
+
+The main project plan is in [city_livability_project.md](mdc:city_livability_project.md), which contains the entire project structure and code.
