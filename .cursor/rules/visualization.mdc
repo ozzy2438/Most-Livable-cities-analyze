@@ -1,0 +1,23 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Data Visualization
+
+The project includes several visualizations created using Matplotlib and Seaborn:
+
+1. **General Ranking Chart**: Horizontal bar chart showing the overall livability scores for all cities
+
+2. **Metric Comparison**: Grouped bar chart comparing different metrics (air quality, economic situation, safety) across cities
+
+3. **Correlation Heatmap**: Shows the correlation between different metrics and the final livability score
+
+4. **Scatter Plot**: Air Quality vs. Safety with:
+   - Point size representing the overall livability score
+   - Color representing the economic score
+   - City names annotated on each point
+
+The visualizations are saved to `data/final/livability_analysis.png` and display the multi-dimensional nature of the livability analysis.
+
+Visualizations are created in the `visualization.py` module as detailed in [city_livability_project.md](mdc:city_livability_project.md).
