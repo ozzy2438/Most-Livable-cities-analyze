@@ -1,0 +1,34 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Data Sources
+
+The project uses several APIs and data sources:
+
+## Air Quality
+- **OpenWeatherMap API**: Provides air quality metrics like AQI, PM2.5, PM10, CO, NO2, and O3
+- API Endpoint: `http://api.openweathermap.org/data/2.5/air_pollution`
+
+## Economic Indicators
+- **FRED API**: Federal Reserve Economic Data for unemployment rates
+- City-specific series IDs:
+  - New York: "NYXRSA"
+  - Chicago: "CHIC426UR"
+  - Austin: "AUST448UR"
+  - Miami: "MIAM412UR"
+  - Denver: "DENV508UR"
+
+## Crime Statistics
+- NYPD Complaints data for New York City
+- Placeholder data for other cities (to be replaced with real API data)
+
+## Education Data
+- **Urban Institute Education Data API**: School directory and graduation rate data
+- API Endpoint: `https://educationdata.urban.org/api/v1/schools/ccd/directory/2021/`
+- Provides metrics like graduation rates, total schools, and education scores
+
+## Health Data
+- **CDC/HealthData.gov**: Health metrics including life expectancy, hospital ratings
+- Currently using placeholder data with planned implementation for real API data
