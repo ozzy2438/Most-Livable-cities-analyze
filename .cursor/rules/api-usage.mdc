@@ -1,0 +1,36 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# API Usage Guide
+
+This project uses several external APIs. Below are the key usage patterns:
+
+## OpenWeatherMap API
+```python
+url = "http://api.openweathermap.org/data/2.5/air_pollution"
+params = {
+    'lat': city_coords['lat'],
+    'lon': city_coords['lon'],
+    'appid': OPENWEATHER_API_KEY
+}
+response = requests.get(url, params=params)
+```
+
+## FRED API (Federal Reserve Economic Data)
+```python
+from fredapi import Fred
+fred = Fred(api_key=FRED_API_KEY)
+data = fred.get_series(series_id, limit=12)
+```
+
+## Urban Institute Education Data API
+```python
+base_url = "https://educationdata.urban.org/api/v1"
+grad_url = f"{base_url}/schools/ccd/directory/2021/"
+params = {'state_fips': state_fips_code}
+response = requests.get(grad_url, params=params)
+```
+
+See [city_livability_project.md](mdc:city_livability_project.md) for full implementation details of each API integration.
