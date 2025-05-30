@@ -1,0 +1,37 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Livability Scoring Algorithm
+
+The livability score is calculated using a weighted average of five key metrics:
+
+| Metric | Weight | Description |
+|--------|--------|-------------|
+| Air Quality | 20% | Based on AQI (Air Quality Index) |
+| Economic Indicators | 25% | Based on unemployment rate |
+| Safety | 20% | Based on crimes per 100k residents |
+| Education | 20% | Based on graduation rates and school quality |
+| Health | 15% | Composite of life expectancy, hospital ratings, etc. |
+
+## Normalization
+
+All metrics are normalized to a 0-10 scale:
+
+- For positive metrics (higher is better): 
+  `score = ((value - min_val) / (max_val - min_val)) * 10`
+
+- For negative metrics (lower is better):
+  `score = 10 - ((value - min_val) / (max_val - min_val)) * 10`
+
+## Categorization
+
+Final livability scores are categorized as:
+- **Mükemmel (Excellent)**: 8.5-10.0
+- **Çok İyi (Very Good)**: 7.5-8.4
+- **İyi (Good)**: 6.5-7.4
+- **Orta (Average)**: 5.5-6.4
+- **Zayıf (Poor)**: 0.0-5.4
+
+The main scoring algorithm implementation is in [city_livability_project.md](mdc:city_livability_project.md) in the `scoring_algorithm.py` section.
